@@ -1,0 +1,73 @@
+/* -------------------- ROOT VARIABLES -------------------------*/
+:root{
+    /*COLORS*/
+    --blue: #7ABFBF;
+    --lt-blue: rgba(122, 191, 191, .5);
+    --orange: #EB5428;
+    --black: #0D0D0D;
+    --off-white: #F2F2F2;
+
+    /* -------------------- IMPORTED FONTS ---------------------*/
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .montserrat {
+        font-family: "Montserrat", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }  
+}
+/*-----------------GLOBAL STYLES (mobile first small)------------*/
+body{ min-width: 414px;
+}
+header{
+    background-color: #F2F2F2;
+}
+/*STOPPING HERE FOR NOW-WILL RETURN LATER TO PRACTICE*/
+
+/*LARGE*/
+@media screen and (min-width:1280px){
+    body{
+        background-color: #7ABFBF;
+    }
+    header{
+        display: inline-block;
+        height:6rem;
+        width:100%;
+        background-color: #F2F2F2;
+        margin: 0 auto;
+        .logo{
+            background-color: #EB5428;
+            color:#F2F2F2;
+            padding: 20px;
+            margin-left: 0;
+            height: 30px;
+            width: 30px;
+        }
+        #menu img{
+            height: 50px;
+            width: 50px;
+            margin-top: 0px;
+        }
+        #menu figcaption{
+            color:#EB5428;
+            font-family: "Bebas Neue";
+            font-style: bold;
+            text-transform: uppercase;
+
+        }
+        .avatar{
+            color: #EB5428;
+            
+        }
+        .avatar figcaption{
+            color:#0D0D0D;
+            font-family: "Bebas Neue";
+            font-style: bold;
+            text-transform: uppercase;
+        }
+    }
+}
